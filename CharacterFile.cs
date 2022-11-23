@@ -14,7 +14,6 @@ namespace Eve_Settings_Manager
         public string CharacterName { get; private set; }
         
         
-
         public CharacterFile(string filePath)
         {
             if (!File.Exists(filePath))

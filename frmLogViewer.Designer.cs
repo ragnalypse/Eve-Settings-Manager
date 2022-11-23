@@ -38,14 +38,14 @@
             this.txtContents.Location = new System.Drawing.Point(0, 0);
             this.txtContents.Multiline = true;
             this.txtContents.Name = "txtContents";
-            this.txtContents.Size = new System.Drawing.Size(800, 450);
+            this.txtContents.Size = new System.Drawing.Size(595, 480);
             this.txtContents.TabIndex = 0;
             // 
             // frmLogViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(595, 480);
             this.Controls.Add(this.txtContents);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLogViewer";

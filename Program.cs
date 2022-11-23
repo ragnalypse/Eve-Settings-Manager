@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace Eve_Settings_Manager
 {
-    static class Program
+    public static class Program
     {
         public static StringBuilder Logger = new StringBuilder();
 

@@ -8,7 +8,7 @@ namespace Eve_Settings_Manager
         public const string FilePrefix = "core_user_";
 
         public override SettingsFileType FileType => SettingsFileType.User;
-        
+         
 
         public UserFile(string filePath)
         {
@@ -42,8 +42,7 @@ namespace Eve_Settings_Manager
                 Program.Logger.AppendLine($"Error initializing user file ({filePath}): {ex.Message}");
             }
         }
-
-
+        
         public override string Details
         {
             get

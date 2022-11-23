@@ -41,15 +41,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnLog = new System.Windows.Forms.Button();
             this.btnRead = new System.Windows.Forms.Button();
             this.btnBrowse = new System.Windows.Forms.Button();
             this.txtDirectory = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.chkBackup = new System.Windows.Forms.CheckBox();
-            this.btnLog = new System.Windows.Forms.Button();
             this.ttMain = new System.Windows.Forms.ToolTip(this.components);
             this.btnAbout = new System.Windows.Forms.Button();
+            this.chkBackup = new System.Windows.Forms.CheckBox();
             this.groupUser.SuspendLayout();
             this.groupCharacter.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -196,6 +196,19 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Step 1: Specify EVE Directory";
             // 
+            // btnLog
+            // 
+            this.btnLog.Enabled = false;
+            this.btnLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLog.Location = new System.Drawing.Point(113, 82);
+            this.btnLog.Name = "btnLog";
+            this.btnLog.Size = new System.Drawing.Size(87, 24);
+            this.btnLog.TabIndex = 5;
+            this.btnLog.Text = "View Log";
+            this.ttMain.SetToolTip(this.btnLog, "Click to view the results of the last read attempt.");
+            this.btnLog.UseVisualStyleBackColor = true;
+            this.btnLog.Click += new System.EventHandler(this.btnLog_Click);
+            // 
             // btnRead
             // 
             this.btnRead.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -253,34 +266,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Step 2: Select Settings to Copy";
             // 
-            // chkBackup
-            // 
-            this.chkBackup.AutoSize = true;
-            this.chkBackup.Checked = true;
-            this.chkBackup.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkBackup.Location = new System.Drawing.Point(501, 397);
-            this.chkBackup.Name = "chkBackup";
-            this.chkBackup.Size = new System.Drawing.Size(97, 17);
-            this.chkBackup.TabIndex = 10;
-            this.chkBackup.Text = "Create Backup";
-            this.ttMain.SetToolTip(this.chkBackup, "Check this box to have the utility create a backup of all settings files prior to" +
-        " overwritting.");
-            this.chkBackup.UseVisualStyleBackColor = true;
-            this.chkBackup.CheckedChanged += new System.EventHandler(this.chkBackup_CheckedChanged);
-            // 
-            // btnLog
-            // 
-            this.btnLog.Enabled = false;
-            this.btnLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLog.Location = new System.Drawing.Point(113, 82);
-            this.btnLog.Name = "btnLog";
-            this.btnLog.Size = new System.Drawing.Size(87, 24);
-            this.btnLog.TabIndex = 5;
-            this.btnLog.Text = "View Log";
-            this.ttMain.SetToolTip(this.btnLog, "Click to view the results of the last read attempt.");
-            this.btnLog.UseVisualStyleBackColor = true;
-            this.btnLog.Click += new System.EventHandler(this.btnLog_Click);
-            // 
             // btnAbout
             // 
             this.btnAbout.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -295,6 +280,21 @@
             this.ttMain.SetToolTip(this.btnAbout, "Click to exit this program.");
             this.btnAbout.UseVisualStyleBackColor = true;
             this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
+            // 
+            // chkBackup
+            // 
+            this.chkBackup.AutoSize = true;
+            this.chkBackup.Checked = true;
+            this.chkBackup.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkBackup.Location = new System.Drawing.Point(502, 397);
+            this.chkBackup.Name = "chkBackup";
+            this.chkBackup.Size = new System.Drawing.Size(97, 17);
+            this.chkBackup.TabIndex = 10;
+            this.chkBackup.Text = "Create Backup";
+            this.ttMain.SetToolTip(this.chkBackup, "Check this box to have the utility create a backup of all settings files prior to" +
+        " overwritting.");
+            this.chkBackup.UseVisualStyleBackColor = true;
+            this.chkBackup.CheckedChanged += new System.EventHandler(this.chkBackup_CheckedChanged);
             // 
             // frmMain
             // 
@@ -342,10 +342,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnRead;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox chkBackup;
         private System.Windows.Forms.Button btnLog;
         private System.Windows.Forms.ToolTip ttMain;
         private System.Windows.Forms.Button btnAbout;
+        private System.Windows.Forms.CheckBox chkBackup;
     }
 }
 

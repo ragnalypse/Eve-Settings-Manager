@@ -41,7 +41,6 @@ namespace Eve_Settings_Manager
         
     }
 
-
     public enum SettingsFileType
     {
         Character,
