@@ -8,14 +8,23 @@ This will copy ALL client settings (interface, audio, chat, shortcuts, etc).
 
 How it works:
 -Close all EVE clients.
+
 -Log in to one of your character's accounts.
+
 -Configure all settings, window locations, overview settings, chat channels, etc.
+
 -Close the EVE client and EVE Launcher.
+
 -Run the Eve Settings Manager program.
+
 -Enter the location of your EVE client profile settings (more info below).
+
 -Select whether to copy User settings or Character settings (or both).
+
 -Select the source user/character. This should be the first option in the list as it is sorted by last-used date.
+
 -Click the Copy button.
+
 -Done
 
 The settings will be copied across all your accounts. Very useful to duplicate your settings so they are the exact same across all characters/accounts.
