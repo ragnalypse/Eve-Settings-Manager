@@ -7,6 +7,7 @@ This is very useful for duplicating the exact same user interface and general se
 This will copy ALL client settings (interface, audio, chat, shortcuts, etc).
 
 How it works:
+
 -Close all EVE clients.
 
 -Log in to one of your character's accounts.
